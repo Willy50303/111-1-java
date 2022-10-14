@@ -1,15 +1,20 @@
-import java.util.Scanner;
-
 public class Test7 {
-	public static void main(String[] args) {
-		int grade = 0;
-		String space = "";
+    public static void main (String[] args) {
+        int row = 0;
+        int t;
+        while (row < 9) {
+			t = row;
+			if (row >= 5) {
+				t = 8 - row;
+			}
+			int star = 0;
+            while (star <= t) {
+                System.out.print("*");
+				star = star + 1;
+            }
+			System.out.println("");
+			row = row + 1;
+        }
 		
-		while (grade < 10) {
-			System.out.print(space);
-			System.out.printf("%d %n", grade);
-			space = space + " ";
-			grade = grade + 1;
-		}
-	}
-}	
+    }
+}
