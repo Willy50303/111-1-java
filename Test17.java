@@ -1,4 +1,4 @@
-public class User {
+public class Test17 {
 	public static void main (String[] args) {
 		int[] arr = {7, 3, 4, 9, 6};
 		int count = 0;
